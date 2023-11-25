@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER */
+header{
+    background: linear-gradient(#111111b2,#11111134), url(assets/imgs/map.jpg) no-repeat; 
+    background-size: cover;  
+    color: #fff;      
+    display: flex;         
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-size: 2.5vmax;        
+}
+
+.nav-center{
+    padding: 3%;
+}
+
+.nav-center ul{
+    display: flex;        
+    gap: 2rem;
+}
+
+.nav-center a{
+    text-decoration: none;        
+    font-size: 2vmax;      
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.nav-center a:focus,
+.nav-center a:hover{
+    transition: .3s;
+    color: #ffa500;
+    border-color: #ffa500;
+}
+
+.login-nav{    
+    margin: .7rem;    
+    float: r;
+}
+
+.login-nav a{
+    text-decoration: none;
+    background-color: #55c4b071;    
+    color: #fff;
+    font-size: 1ch;
+    padding: .5rem;
+    border: 1px solid #fff;
+}
+
+.login-nav a:hover,
+.login-nav a:focus{
+    transition: 1s;
+    filter: brightness(1.3);    
+}
+
+#auto-text{    
+    width: 100%;    
+    height: 10vmax;    
+    padding: .2vw;
+    margin: 1rem;               
+}
+
+#auto-text h3{
+    font-size: 5vmax;
+    font-weight: 500;
+    color: #55C4B0;  
+    width: 80%; 
+}
+
+.more{        
+    padding-top: 10vmax;    
+    width: 100%;    
+    margin-top: 8vh;                    
+    text-align: center;
+    font-size: 80%;    
+}
+
+.more span{
+    background-color: #55c4b071;            
+    display: block;
+    padding: 5%;    
+}
+
+.more p{
+    padding-bottom: 3%;
+    font-size: 1.5ch;    
+}
+
+.more a{
+    text-decoration: none;    
+    color: #55C4B0;    
+    border-radius: 20px;
+    padding: 1rem;    
+    background-color: #fff;
+}
+
+.more a:focus,
+.more a:hover{
+    transition: .2s;
+    background-color: #55c4b071;        
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+
+/* ANIMATION... */
+
+
+
+/* SECTION */
+section img{
+    width: 50px;
+}
