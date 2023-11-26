@@ -97,8 +97,9 @@ header{
     text-decoration: none;    
     color: #55C4B0;    
     border-radius: 20px;
-    padding: 1rem;    
+    padding: 1vmax;    
     background-color: #fff;
+    font-size: 2ch;
 }
 
 .more a:focus,
@@ -109,12 +110,23 @@ header{
     border: 1px solid #fff;
 }
 
-
-/* ANIMATION... */
-
-
-
 /* SECTION */
 section img{
     width: 50px;
+}
+
+.infos{
+    background-color: #eeeeee;
+    padding: 3rem;
+    text-align: center;    
+}
+
+.infos ul{
+    display: flex;        
+}
+
+.infos li{
+    text-align: center;
+    width: 50%;
+    color: #55C4B0;
 }
