@@ -192,11 +192,11 @@ header{
 }
 
 .events li{
-    width: 50%;        
+    width: 100%;        
 }
 
 .events img{
-    width: 18vmax;
+    width: 25vw;
     height: 15vmax;            
     border: 2px solid #0494f5;
 }
