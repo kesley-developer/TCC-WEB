@@ -89,9 +89,7 @@ header{
 .login-nav a:hover,
 .login-nav a:focus{
     transition: 1s;
-    filter: brightness(1.1);        
-    border-top: 1px solid #ffa500;
-    border-bottom: 1px solid #ffa500;
+    filter: brightness(1.1);            
 }
 
 #auto-text{    
