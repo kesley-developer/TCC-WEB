@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>ViaMaximus</h1>
+            <p>Inscrição</p>
+        </div>
+    </header>
+    
+    <section>            
+        <!-- LISTA DE TEXTO ACIMA DO FORMULÁRIO -->
+        <div class="list-infos">
+            <ul>
+                <li><h3>Viaje</h3></li>
+                <li><h3>Econômize</h3></li>
+                <li><h3>Aproveite</h3></li>
+            </ul>
+        </div>
+        
+        <!-- FORMULÁRIO - HTML -->
+        <div class="caixa-formulario">
+            <span class="formulario-text">
+                <h2>Faça sua inscrição</h2>
+                <p>e conheça novos horizontes</p>
+            </span>
+            <form action="#">                        
+                <div>
+                    <label for="Nome">Nome Completo</label>
+                    <input type="text"  autocomplete="off" required>
+                </div>
+    
+                <div>
+                    <label for="CPF">CPF</label>
+                    <input type="number"  autocomplete="off" required>
+                </div>
+    
+                <div>
+                    <label for="Email">Email</label>
+                    <input type="email" autocomplete="off" required>
+                </div>
+            
+                <div>
+                    <label for="Email">Repita o Email</label>
+                    <input type="email" autocomplete="off" required>
+                </div>
+    
+                <div>
+                    <label for="Senha">Senha</label>
+                    <input type="password" autocomplete="off" required>
+                </div>
+    
+                <div>
+                    <label for="Senha">Repita Senha</label>
+                    <input type="password" autocomplete="off" required>
+                </div>                
+            
+                <div class="confirmar">       
+                    <input type="checkbox" required>
+                    <label for="Termos">Aceito os termos de uso</label>
+                </div>
+
+                <div>
+                    <input type="submit" value="CADASTRAR">
+                </div>
+            </form>
+        </div>        
+    </section>
+
+    <footer>
+        <div>
+            <p>Copyright © 2023 <a href="#">ViaMaximus</a></p>
+        </div>
+    </footer>
+</body>
+</html>

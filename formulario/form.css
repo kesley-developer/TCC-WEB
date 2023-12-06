@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BARRA DE ROLAGEM */
+::-webkit-scrollbar{
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #0494f5;
+    border-radius: 20px;
+}
+
+/* BODY */
+body{
+    background: url(formulario_background.png) no-repeat;
+    background-size: cover;    
+}
+
+/* HEADER */
+header{        
+    background-color: #ffffffce;
+    padding: 2%;
+    color: #0494f5;    
+}
+
+header h1{
+    font-size: 5vmax;
+}
+
+header p{
+    margin-left: 3%;
+    color: #ffa500;
+}
+
+.list-infos{
+    border: 1px solid #fff;
+    padding: 1%;
+}
+
+.list-infos ul{
+    display: flex;
+    justify-content: center;    
+}
+
+.list-infos li{
+    color: #ff0000; 
+    margin: 20px;   
+}
+
+.list-infos li:nth-child(odd){
+    color: #ffa500;
+}
+
+.list-infos h3{
+    color: #fff;
+    font-size: 3vmax;
+}
+
+/* ESTILIZAÇÃO - FORMULÁRIO */
+.caixa-formulario{
+    width: 70%;
+    margin: 6% auto;   
+    text-align: center;
+    padding: 0%;        
+}
+
+.formulario-text > h2{
+    color: #ffa;
+    font-size: 4vmax;
+}
+
+.formulario-text > p{
+    color: #fff;
+    font-size: 1.5vmax;    
+}
+
+.formulario-text{
+    background-color: #ffa6005d;
+    display: block;
+    padding: 2%;
+}
+
+form{
+    padding: 4em;
+}
+
+form div{
+    margin: 2%;
+    text-align: left;
+    padding: .2rem;
+}
+
+/* ESTILIZANDO - FORMULÁRIO LABEL */
+form div:nth-child(odd) > label{
+    color: #fff;    
+}
+
+form label{
+    color: #ffa500;
+    padding-right: 10%;    
+    margin-left: 4vw;    
+}
+
+/* ESTILIZANDO - FORMULÁRIO INPUT */
+form input{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;    
+    height: 2vmax;
+    float: right;    
+    padding: 1%;
+}
+
+form input:focus{
+    background-color: #ffa500;
+    color: #111;
+}
+
+/* TAMANHO INPUT */
+form input[type="text"]{
+    width: 30vmax;
+}
+
+form input[type="number"]{
+    width: 20vmax;
+}
+
+form input[type="email"]{
+    width: 25vmax;
+}
+
+form input[type="password"]{
+    width: 18vmax;
+}
+
+.confirmar input{
+    float: none;    
+}
+
+/* INPUT - SUBMIT */
+form input[type="submit"]{
+    transition: .3s;
+    cursor: pointer;
+    background-color: #ffa6005d;
+    border-radius: 20px;
+    border: none;
+    width: max-content;
+    height: 2.5vmax;
+    
+}
+
+form input[type="submit"]:focus,
+form input[type="submit"]:hover{
+    transition: .3s;
+    filter: brightness(1.3);
+    color: #ffa500;
+}
+
+/* FOOTER */
+footer{    
+    color: #fff;
+    text-align: center;
+    padding: 3rem;
+    background-color: #ffa6005d;
+}
+
+footer p{
+    font-size: 18px;
+}
+
+footer a{
+    color: #ffa500;
+}
+
+footer a:focus,
+footer a:hover{
+    color: #fff;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 480px) {
+    .caixa-formulario{
+        width: 100%;
+    }
+    
+    form div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    form input{
+        float: none;
+    }
+    
+}
