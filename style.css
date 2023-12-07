@@ -17,7 +17,7 @@
 
 /* HEADER */
 header{    
-    background: linear-gradient(#1111113a,#1111113a),url(formulario_background.png);    
+    background: linear-gradient(#1111113a,#1111113a),url(assets/imgs/map.jpg);    
     background-size: 100%;        
     color: #fff;          
     display: flex;         
@@ -327,20 +327,22 @@ form input[type="submit"]:focus{
 
 /* CONTACT */ 
 .contact{    
+    z-index: 1;
     display: none;
-    background-color: #0494f5;        
-    border: 1px solid #fff;
+    background-color: #0494f5;            
     position: fixed;
     right: 2%;
     bottom: 2%;      
     width: 25vmax;
     opacity: 90%;
+    border-radius: 20px;
 }
 
 .contact .text-box{
     background-color: #ffa500;
     display: flex;    
     justify-content: space-between;
+    border: 1px solid #fff;
 }
 
 .contact h4{    
@@ -363,7 +365,7 @@ form input[type="submit"]:focus{
     display: flex;
     justify-content: space-around;
     background-color: #0494f5;   
-    margin: 3%;
+    margin: 3%;    
 }
 
 .contact a:focus,
@@ -385,12 +387,11 @@ footer{
 }
 
 .ft-top{    
-    color: #ffa500;
+    color: #fff;
     padding: 10%;
-    background: linear-gradient(#27abd76c,#27abd76c), url(assets/imgs/map.jpg) no-repeat;
+    background: url(formulario/formulario_background.png) no-repeat;
     background-size: cover;
-    text-align: center;
-    border-bottom: 3px solid #1111113a;    
+    text-align: center;        
 }
 
 .ft-top h2{
