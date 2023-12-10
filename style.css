@@ -16,9 +16,10 @@
 }
 
 /* HEADER */
-header{
-    background-color: #0494f5;    
-    color: #fff;      
+header{    
+    background: linear-gradient(#1111113a,#1111113a),url(assets/imgs/map.jpg);    
+    background-size: 100%;        
+    color: #fff;          
     display: flex;         
     flex-wrap: wrap;
     justify-content: space-between;
@@ -56,8 +57,8 @@ header{
 .nav-center a{    
     text-decoration: none;
     font-size: 2vmax;      
-    color: #fff;    
-    padding: 4%;    
+    color: #fff;        
+    padding: 2%;        
 }
 
 .nav-center a:focus,
@@ -77,7 +78,7 @@ header{
 }
 
 .login-nav a{
-    text-decoration: none;
+    text-decoration: none;    
     background-color: #27AAD7;    
     color: #fff;
     font-size: .7ch;
@@ -88,7 +89,7 @@ header{
 .login-nav a:hover,
 .login-nav a:focus{
     transition: 1s;
-    filter: brightness(1.1);    
+    filter: brightness(1.1);            
 }
 
 #auto-text{    
@@ -192,11 +193,11 @@ header{
 }
 
 .events li{
-    width: 50%;        
+    width: 100%;        
 }
 
 .events img{
-    width: 18vmax;
+    width: 25vw;
     height: 15vmax;            
     border: 2px solid #0494f5;
 }
@@ -326,20 +327,22 @@ form input[type="submit"]:focus{
 
 /* CONTACT */ 
 .contact{    
+    z-index: 1;
     display: none;
-    background-color: #0494f5;        
-    border: 1px solid #fff;
+    background-color: #0494f5;            
     position: fixed;
     right: 2%;
     bottom: 2%;      
     width: 25vmax;
     opacity: 90%;
+    border-radius: 20px;
 }
 
 .contact .text-box{
     background-color: #ffa500;
     display: flex;    
     justify-content: space-between;
+    border: 1px solid #fff;
 }
 
 .contact h4{    
@@ -362,7 +365,7 @@ form input[type="submit"]:focus{
     display: flex;
     justify-content: space-around;
     background-color: #0494f5;   
-    margin: 3%;
+    margin: 3%;    
 }
 
 .contact a:focus,
@@ -379,15 +382,16 @@ form input[type="submit"]:focus{
 
 /* FOOTER */
 footer{            
+    border-top: 4px solid #1111113a;
     color: #0494f5;      
 }
 
 .ft-top{    
-    color: #ffa500;
+    color: #fff;
     padding: 10%;
-    background: linear-gradient(#27abd76c,#27abd76c), url(assets/imgs/map.jpg) no-repeat;
+    background: url(formulario/formulario_background.png) no-repeat;
     background-size: cover;
-    text-align: center;
+    text-align: center;        
 }
 
 .ft-top h2{
@@ -395,7 +399,7 @@ footer{
 }
 
 .copyright{
-    padding: 10vh 10vw;
+    padding: 7% 7% .2% 7%;    
     text-align: center;
     background-color: #27AAD7;
     color: #fff;
@@ -413,4 +417,19 @@ footer{
 .copyright i{
     font-size: 80%;
     color: #ffa500;
+}
+
+.ft-contact{
+    display: block;    
+    margin: 20px;
+    font-size: 12px;    
+}
+
+.ft-contact ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #fff;
+    padding: 20px;
+    line-break: none;
 }
