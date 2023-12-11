@@ -17,7 +17,7 @@
 
 /* BODY */
 body{
-    background: url(formulario_background.png) no-repeat;
+    background-color: #0494f5;
     background-size: cover;    
 }
 
@@ -28,15 +28,22 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;    
 }
 
-header h1{
-    font-size: 5vmax;
+header img{
+    width: 20vmax;    
 }
 
-header p{    
-    color: #ffa;
-    text-align: center;
+.header-txt{
+    font-size: 2.5vmax;
+    display: flex;
+    color: #ffa500;    
+    gap: 3vw;        
+}
+
+.header-txt > h3{
+    font-weight: 200;
 }
 
 .back{
@@ -44,47 +51,24 @@ header p{
 }
 
 .back a{
-    color: #ffa;
+    background-color: #ffa500 ;
+    color: #fff;
     padding: 10px 5px;
-    background-color: #ffa500;
-    border-radius: 10px;
+    border: 1px solid #fff;
     text-decoration: none;    
 }
 
 .back a:focus,
 .back a:hover{
-    filter: brightness(1.1);
-    border-bottom: 2px solid #fff;    
-}
-
-.list-infos{    
-    padding: 1%;
-}
-
-.list-infos ul{
-    display: flex;
-    justify-content: center;    
-}
-
-.list-infos li{
-    color: #ff0000; 
-    margin: 20px;   
-}
-
-.list-infos li:nth-child(odd){
-    color: #ffa500;
-}
-
-.list-infos h3{
-    color: #fff;
-    font-size: 3vmax;
+    filter: brightness(1.3);       
 }
 
 /* ESTILIZAÇÃO - FORMULÁRIO */
 .caixa-formulario{
     width: 70%;
-    margin: 6% auto;   
-    text-align: center;    
+    margin: 0% auto;   
+    text-align: center;
+    
 }
 
 .formulario-text > h2{
@@ -100,7 +84,7 @@ header p{
 }
 
 .formulario-text{
-    background: url(formulario_background.png);
+    background-color: #ffa500;    
     display: block;
     padding: 2%;
     border-bottom: 1px solid #fff;
