@@ -6,8 +6,9 @@
     <title>ViaMaximus © | Cadastre - se</title>
     <link rel="stylesheet" href="form.css">
     <link rel="shortcut icon" href="../assets/imgs/logo.png" type="image/png">
+    
     <!-- CDN - ICONS FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/c1425a6fcc.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c1425a6fcc.js" crossorigin="anonymous"></script>    
 </head>
 <body>    
     <main>                    
@@ -29,38 +30,42 @@
             </span>
             <form action="#">                        
                 <div>
-                    <label for="Nome">Nome Completo</label>
-                    <input type="text"  autocomplete="off">
+                    <label for="nome">Nome Completo</label>
+                    <input id="nome" type="text"  autocomplete="off" maxlength="35">
                 </div>
     
                 <div>
-                    <label for="CPF">CPF</label>
-                    <input type="number"  autocomplete="off" required>
+                    <label for="cpf">CPF</label>
+                    <input id="cpf" autocomplete="off" required                                                
+                        oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"
+                        type = "number"
+                        maxlength = "11"
+                    >
                 </div>
     
                 <div>
-                    <label for="Email">Email</label>
-                    <input type="email" autocomplete="off" required>
+                    <label for="email">Email</label>
+                    <input id="email" type="email" autocomplete="off" required maxlength="40">
                 </div>
             
                 <div>
-                    <label for="Email">Repita o Email</label>
-                    <input type="email" autocomplete="off" required>
+                    <label for="email-2">Repita o Email</label>
+                    <input id="email-2" type="email" autocomplete="off" required maxlength="40">
                 </div>
     
                 <div>
-                    <label for="Senha">Senha</label>
-                    <input type="password" autocomplete="off" required>
+                    <label for="senha">Senha</label>
+                    <input id="senha" type="password" autocomplete="off" required maxlength="30">
                 </div>
     
                 <div>
-                    <label for="Senha">Repita Senha</label>
-                    <input type="password" autocomplete="off" required>
+                    <label for="senha-2">Repita Senha</label>
+                    <input id="senha-2" type="password" autocomplete="off" required maxlength="30">
                 </div>                
             
                 <span class="termos">       
-                    <input type="checkbox" required>
-                    <label for="Termos">Aceito os termos de <b>uso e contrato</b></label>
+                    <input id="termos" type="checkbox" required>
+                    <label for="termos">Aceito os termos de <b>uso e contrato</b></label>
                 </span>
 
                 <span class="enviar">
@@ -74,6 +79,6 @@
         <div>
             <p>Copyright © 2023 <a href="../index.html">ViaMaximus</a></p>
         </div>
-    </footer>
+    </footer>    
 </body>
 </html>
